@@ -30,7 +30,7 @@ public:
 	
 	//Return true of the (x,y) provided is inside the diamond
 	bool isInside(float x, float y);
-	void draw();
+	void draw(ci::Vec2i mouse_pos);
 	void update();
 };
 

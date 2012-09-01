@@ -56,11 +56,13 @@ void RoyalSocietyApp::update()
 			cur = cur->next_;
 		} while (cur != diamond_list_);
 	}
+	
+	frame_number_++;
 }
 
 void RoyalSocietyApp::draw()
 {
-	if(frame_number_ == 0){
+	if(frame_number_ == 1){
 		gl::rotate(45);
 	}
 	
@@ -70,12 +72,12 @@ void RoyalSocietyApp::draw()
 	Diamond* cur = diamond_list_;
 	if(cur != NULL){
 		do {
-			cur->draw();
+			cur->draw(getMousePos());
 			cur = cur->next_;
 		} while (cur != diamond_list_);
 	}
 	
-	frame_number_++;
+	
 }
 
 CINDER_APP_BASIC( RoyalSocietyApp, RendererGl )
