@@ -1,0 +1,213 @@
+// !$*UTF8*$!
+{
+	00BAE6590E7ED9C10018A608 /* RoyalSocietyApp.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1030, 847}}";
+			sepNavSelRange = "{1066, 0}";
+			sepNavVisRange = "{0, 1138}";
+			sepNavWindowFrame = "{{-1275, -96}, {1089, 975}}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = F0BEAC5115F1289200E76782 /* RoyalSociety */;
+		activeTarget = 8D1107260486CEB800E47090 /* RoyalSociety */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* RoyalSociety */,
+		);
+		codeSenseManager = F0BEAC5B15F128AD00E76782 /* Code sense */;
+		executables = (
+			F0BEAC5115F1289200E76782 /* RoyalSociety */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					397,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 368149587;
+			PBXWorkspaceStateSaveDate = 368149587;
+		};
+		perUserProjectItems = {
+			F0BEAC5515F1289800E76782 = F0BEAC5515F1289800E76782 /* PBXBookmark */;
+			F0BEAC5E15F12E3800E76782 = F0BEAC5E15F12E3800E76782 /* PBXBookmark */;
+			F0BEAC7515F1426100E76782 = F0BEAC7515F1426100E76782 /* PBXTextBookmark */;
+			F0BEAC7715F1426100E76782 = F0BEAC7715F1426100E76782 /* PBXTextBookmark */;
+			F0BEAC7815F1426100E76782 = F0BEAC7815F1426100E76782 /* PBXTextBookmark */;
+			F0BEAC7915F1426100E76782 = F0BEAC7915F1426100E76782 /* PBXTextBookmark */;
+			F0BEAC7A15F1426100E76782 = F0BEAC7A15F1426100E76782 /* PBXTextBookmark */;
+			F0BEAC8015F1426100E76782 = F0BEAC8015F1426100E76782 /* PBXTextBookmark */;
+			F0BEAC8315F1426100E76782 = F0BEAC8315F1426100E76782 /* PBXTextBookmark */;
+		};
+		sourceControlManager = F0BEAC5A15F128AD00E76782 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107260486CEB800E47090 /* RoyalSociety */ = {
+		activeExec = 0;
+		executables = (
+			F0BEAC5115F1289200E76782 /* RoyalSociety */,
+		);
+	};
+	F0BEAC5115F1289200E76782 /* RoyalSociety */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = RoyalSociety;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	F0BEAC5515F1289800E76782 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* RoyalSocietyApp.cpp */;
+	};
+	F0BEAC5715F128AD00E76782 /* Diamond.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {628, 468}}";
+			sepNavSelRange = "{828, 0}";
+			sepNavVisRange = "{122, 711}";
+		};
+	};
+	F0BEAC5815F128AD00E76782 /* Diamond.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1030, 847}}";
+			sepNavSelRange = "{1286, 0}";
+			sepNavVisRange = "{0, 1306}";
+			sepNavWindowFrame = "{{-1112, -108}, {1089, 975}}";
+		};
+	};
+	F0BEAC5A15F128AD00E76782 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	F0BEAC5B15F128AD00E76782 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	F0BEAC5E15F12E3800E76782 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = F0BEAC5815F128AD00E76782 /* Diamond.cpp */;
+	};
+	F0BEAC7515F1426100E76782 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F0BEAC7615F1426100E76782 /* CatPictureApp.cpp */;
+		name = "CatPictureApp.cpp: 5";
+		rLen = 296;
+		rLoc = 89;
+		rType = 0;
+		vrLen = 529;
+		vrLoc = 0;
+	};
+	F0BEAC7615F1426100E76782 /* CatPictureApp.cpp */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = CatPictureApp.cpp;
+		path = "/Users/brinkmwj/Work/Teaching and learning/Courses/2012-2013_Fall/274/Gits/CatPicture/src/CatPictureApp.cpp";
+		sourceTree = "<absolute>";
+	};
+	F0BEAC7715F1426100E76782 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* RoyalSocietyApp.cpp */;
+		name = "RoyalSocietyApp.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 451;
+		vrLoc = 0;
+	};
+	F0BEAC7815F1426100E76782 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F0BEAC5815F128AD00E76782 /* Diamond.cpp */;
+		name = "Diamond.cpp: 23";
+		rLen = 0;
+		rLoc = 663;
+		rType = 0;
+		vrLen = 836;
+		vrLoc = 0;
+	};
+	F0BEAC7915F1426100E76782 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F0BEAC5715F128AD00E76782 /* Diamond.h */;
+		name = "Diamond.h: 35";
+		rLen = 0;
+		rLoc = 891;
+		rType = 0;
+		vrLen = 757;
+		vrLoc = 122;
+	};
+	F0BEAC7A15F1426100E76782 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F0BEAC5715F128AD00E76782 /* Diamond.h */;
+		name = "Diamond.h: 33";
+		rLen = 0;
+		rLoc = 828;
+		rType = 0;
+		vrLen = 711;
+		vrLoc = 122;
+	};
+	F0BEAC8015F1426100E76782 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F0BEAC5815F128AD00E76782 /* Diamond.cpp */;
+		name = "Diamond.cpp: 53";
+		rLen = 0;
+		rLoc = 1286;
+		rType = 0;
+		vrLen = 1306;
+		vrLoc = 0;
+	};
+	F0BEAC8315F1426100E76782 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* RoyalSocietyApp.cpp */;
+		name = "RoyalSocietyApp.cpp: 54";
+		rLen = 0;
+		rLoc = 1066;
+		rType = 0;
+		vrLen = 1138;
+		vrLoc = 0;
+	};
+}
