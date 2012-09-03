@@ -37,8 +37,7 @@ void RoyalSocietyApp::setup()
 {
 	diamond_list_ = new Diamond();
 	Vec2f trans = (kAppWidth/2.0f)*kUnitX + (kAppHeight/2.0f)*kUnitY;
-	diamond_list_->x_	= trans.x;
-	diamond_list_->y_	= trans.y;	
+	diamond_list_->position_ = trans;
 	diamond_list_->radius_	= kAppHeight/2.0f;
 	frame_number_ = 0;
 	
@@ -58,7 +57,7 @@ void RoyalSocietyApp::update()
 	
 	if(cur != NULL){
 		do {
-			cur->update(center.x, center.y, kAppWidth/2.0);
+			cur->update(center, kAppWidth/2.0);
 			cur = cur->next_;
 		} while (cur != diamond_list_);
 	}

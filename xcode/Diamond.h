@@ -23,15 +23,15 @@ public:
 	//Pointer to the sentinel for my list of children.
 	Diamond* children_;
 	
-	float x_;
-	float y_;
-	float z_; //The depth of the diamond. Keep the list sorted by z_. z_ must be <= 0.0f
+	ci::Vec2f position_;
 	float radius_;
+	
+	ci::Vec2f velocity_;
 	
 	//Return true of the (x,y) provided is inside the diamond
 	bool isInside(float x, float y);
 	void draw(ci::Vec2i mouse_pos);
-	void update(float parent_x, float parent_y, float parent_r);
+	void update(ci::Vec2f parent_position, float parent_r);
 	
 	void addRandomChild();
 };

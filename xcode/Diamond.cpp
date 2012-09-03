@@ -15,6 +15,7 @@
 #include "cinder/gl/gl.h"
 #include "cinder/app/AppBasic.h"
 #include "Diamond.h"
+#include "cinder/Rand.h";
 
 using namespace ci;
 using namespace ci::app;
@@ -26,7 +27,9 @@ Diamond::Diamond(){
 	next_ = prev_ = this;
 	children_ = NULL;
 	
-	x_ = y_ = z_ = radius_ = 0.0f;
+	position_ = Vec2f(0.0f,0.0f);
+	radius_ = 0.0f;
+	velocity_ = randVec2f();
 }
 
 void insertAfter(Diamond* new_item, Diamond* insert_here){
@@ -38,15 +41,17 @@ void insertAfter(Diamond* new_item, Diamond* insert_here){
 
 bool Diamond::isInside(float x, float y){
 	Vec2i trans = x*Vec2f(0.7071f,-0.7071f) + y*Vec2f(0.7071f,0.7071f);
-	return (trans.x >= x_-radius_ && trans.x <= x_+radius_ &&
-			trans.y >= y_-radius_ && trans.y <= y_+radius_);
+	return (trans.x >= position_.x-radius_ && trans.x <= position_.x+radius_ &&
+			trans.y >= position_.y-radius_ && trans.y <= position_.y+radius_);
 }
 
-void Diamond::update(float parent_x, float parent_y, float parent_r){
+void Diamond::update(Vec2f parent_position, float parent_r){
+	
+	
 	Diamond* cur = children_;
 	if(cur != NULL){
 		do {
-			cur->update(x_,y_,radius_);
+			cur->update(position_,radius_);
 			cur = cur->next_;
 		} while (cur->next_ != children_);
 	}
@@ -56,8 +61,7 @@ void Diamond::addRandomChild(){
 	Diamond* new_item = new Diamond();
 	new_item->radius_ = 0.45*radius_;
 	//TODO change center
-	new_item->x_ = x_;
-	new_item->y_ = y_;
+	new_item->position_ = position_;
 	
 	if(children_ != NULL){
 		insertAfter(new_item, children_);
@@ -72,15 +76,15 @@ void Diamond::draw(Vec2i mp){
 	bool is_inside = isInside(mp.x, mp.y);
 
 	if(is_inside){
-		gl::color(Color8u(255,92,92));
+		gl::color(Color8u(255,127,00));
 	} else {
 		gl::color(Color8u(255,0,0));
 	}
-	gl::drawSolidRect(Rectf(x_-radius_,y_-radius_,x_+radius_,y_+radius_));
+	gl::drawSolidRect(Rectf(position_.x-radius_,position_.y-radius_,position_.x+radius_,position_.y+radius_));
 	gl::color(Color8u(255,255,0));
-	gl::drawSolidRect(Rectf(x_-0.95*radius_,y_-0.95*radius_,x_+0.95*radius_,y_+0.95*radius_));
-	gl::color(Color8u(255,0,0));
-	gl::drawSolidRect(Rectf(x_-0.9*radius_,y_-0.9*radius_,x_+0.9*radius_,y_+0.9*radius_));
+	gl::drawSolidRect(Rectf(position_.x-0.95*radius_,position_.y-0.95*radius_,position_.x+0.95*radius_,position_.y+0.95*radius_));
+	gl::color(Color8u(255,64,0));
+	gl::drawSolidRect(Rectf(position_.x-0.9*radius_,position_.y-0.9*radius_,position_.x+0.9*radius_,position_.y+0.9*radius_));
 	
 	//Next, draw my children
 	Diamond* cur = children_;
