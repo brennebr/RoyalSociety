@@ -3,8 +3,8 @@
 	00BAE6590E7ED9C10018A608 /* RoyalSocietyApp.cpp */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1030, 1066}}";
-			sepNavSelRange = "{844, 0}";
-			sepNavVisRange = "{363, 1216}";
+			sepNavSelRange = "{959, 0}";
+			sepNavVisRange = "{363, 1217}";
 			sepNavWindowFrame = "{{9, 0}, {1089, 878}}";
 		};
 	};
@@ -73,15 +73,17 @@
 			PBXWorkspaceStateSaveDate = 368326044;
 		};
 		perUserProjectItems = {
-			F03356D515F4349D0018DA50 = F03356D515F4349D0018DA50 /* PBXTextBookmark */;
-			F03356E015F434F50018DA50 = F03356E015F434F50018DA50 /* PBXTextBookmark */;
-			F03356E415F435020018DA50 = F03356E415F435020018DA50 /* PBXTextBookmark */;
-			F03356EF15F4358B0018DA50 = F03356EF15F4358B0018DA50 /* PBXTextBookmark */;
-			F03356F015F4358B0018DA50 = F03356F015F4358B0018DA50 /* PBXTextBookmark */;
-			F03356F115F4358B0018DA50 = F03356F115F4358B0018DA50 /* PBXTextBookmark */;
-			F0BEAC7515F1426100E76782 = F0BEAC7515F1426100E76782 /* PBXTextBookmark */;
-			F0BEAC7715F1426100E76782 = F0BEAC7715F1426100E76782 /* PBXTextBookmark */;
-			F0F198C515F2DF7200A084DC = F0F198C515F2DF7200A084DC /* PBXTextBookmark */;
+			F03356D515F4349D0018DA50 /* PBXTextBookmark */ = F03356D515F4349D0018DA50 /* PBXTextBookmark */;
+			F03356F015F4358B0018DA50 /* PBXTextBookmark */ = F03356F015F4358B0018DA50 /* PBXTextBookmark */;
+			F03356F115F4358B0018DA50 /* PBXTextBookmark */ = F03356F115F4358B0018DA50 /* PBXTextBookmark */;
+			F03BAA5E15F435EC005AB4AD /* PBXBookmark */ = F03BAA5E15F435EC005AB4AD /* PBXBookmark */;
+			F03BAA6B15F436CB005AB4AD /* PBXTextBookmark */ = F03BAA6B15F436CB005AB4AD /* PBXTextBookmark */;
+			F03BAA6C15F436CB005AB4AD /* XCBuildMessageTextBookmark */ = F03BAA6C15F436CB005AB4AD /* XCBuildMessageTextBookmark */;
+			F03BAA6D15F436CB005AB4AD /* PBXTextBookmark */ = F03BAA6D15F436CB005AB4AD /* PBXTextBookmark */;
+			F03BAA7015F436CB005AB4AD /* PBXTextBookmark */ = F03BAA7015F436CB005AB4AD /* PBXTextBookmark */;
+			F03BAA7115F436CB005AB4AD /* PBXTextBookmark */ = F03BAA7115F436CB005AB4AD /* PBXTextBookmark */;
+			F03BAA7415F436CB005AB4AD /* PBXTextBookmark */ = F03BAA7415F436CB005AB4AD /* PBXTextBookmark */;
+			F0BEAC7515F1426100E76782 /* PBXTextBookmark */ = F0BEAC7515F1426100E76782 /* PBXTextBookmark */;
 		};
 		sourceControlManager = F0BEAC5A15F128AD00E76782 /* Source Control */;
 		userBuildSettings = {
@@ -121,33 +123,6 @@
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
-	F03356E015F434F50018DA50 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0BEAC5815F128AD00E76782 /* Diamond.cpp */;
-		rLen = 1;
-		rLoc = 69;
-		rType = 1;
-	};
-	F03356E415F435020018DA50 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0BEAC5815F128AD00E76782 /* Diamond.cpp */;
-		name = "Diamond.cpp: 70";
-		rLen = 0;
-		rLoc = 1918;
-		rType = 0;
-		vrLen = 1585;
-		vrLoc = 1255;
-	};
-	F03356EF15F4358B0018DA50 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0BEAC5815F128AD00E76782 /* Diamond.cpp */;
-		name = "Diamond.cpp: 70";
-		rLen = 63;
-		rLoc = 1857;
-		rType = 0;
-		vrLen = 597;
-		vrLoc = 1563;
-	};
 	F03356F015F4358B0018DA50 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = F0BEAC5815F128AD00E76782 /* Diamond.cpp */;
@@ -167,6 +142,69 @@
 		rType = 0;
 		vrLen = 1216;
 		vrLoc = 363;
+	};
+	F03BAA5E15F435EC005AB4AD /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = F0BEAC5715F128AD00E76782 /* Diamond.h */;
+	};
+	F03BAA6B15F436CB005AB4AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F0BEAC5815F128AD00E76782 /* Diamond.cpp */;
+		name = "Diamond.cpp: 36";
+		rLen = 0;
+		rLoc = 931;
+		rType = 0;
+		vrLen = 665;
+		vrLoc = 503;
+	};
+	F03BAA6C15F436CB005AB4AD /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "No matching function for call to 'Diamond::Diamond(int, cinder::Vec2f&)'";
+		fRef = 00BAE6590E7ED9C10018A608 /* RoyalSocietyApp.cpp */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 38;
+		rType = 1;
+	};
+	F03BAA6D15F436CB005AB4AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* RoyalSocietyApp.cpp */;
+		name = "RoyalSocietyApp.cpp: 39";
+		rLen = 0;
+		rLoc = 881;
+		rType = 0;
+		vrLen = 675;
+		vrLoc = 489;
+	};
+	F03BAA7015F436CB005AB4AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* RoyalSocietyApp.cpp */;
+		name = "RoyalSocietyApp.cpp: 41";
+		rLen = 0;
+		rLoc = 959;
+		rType = 0;
+		vrLen = 1217;
+		vrLoc = 363;
+	};
+	F03BAA7115F436CB005AB4AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F0BEAC5815F128AD00E76782 /* Diamond.cpp */;
+		name = "Diamond.cpp: 70";
+		rLen = 0;
+		rLoc = 1918;
+		rType = 0;
+		vrLen = 1486;
+		vrLoc = 834;
+	};
+	F03BAA7415F436CB005AB4AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F0BEAC5715F128AD00E76782 /* Diamond.h */;
+		name = "Diamond.h: 17";
+		rLen = 0;
+		rLoc = 468;
+		rType = 0;
+		vrLen = 983;
+		vrLoc = 0;
 	};
 	F0BEAC5115F1289200E76782 /* RoyalSociety */ = {
 		isa = PBXExecutable;
@@ -202,16 +240,17 @@
 	};
 	F0BEAC5715F128AD00E76782 /* Diamond.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {575, 507}}";
-			sepNavSelRange = "{884, 0}";
-			sepNavVisRange = "{294, 655}";
+			sepNavIntBoundsRect = "{{0, 0}, {1030, 750}}";
+			sepNavSelRange = "{468, 0}";
+			sepNavVisRange = "{0, 983}";
+			sepNavWindowFrame = "{{15, 0}, {1089, 878}}";
 		};
 	};
 	F0BEAC5815F128AD00E76782 /* Diamond.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {575, 1352}}";
-			sepNavSelRange = "{931, 0}";
-			sepNavVisRange = "{503, 665}";
+			sepNavIntBoundsRect = "{{0, 0}, {1030, 1339}}";
+			sepNavSelRange = "{1918, 0}";
+			sepNavVisRange = "{834, 1486}";
 			sepNavWindowFrame = "{{167, 0}, {1089, 878}}";
 		};
 	};
@@ -245,25 +284,5 @@
 		name = CatPictureApp.cpp;
 		path = "/Users/brinkmwj/Work/Teaching and learning/Courses/2012-2013_Fall/274/Gits/CatPicture/src/CatPictureApp.cpp";
 		sourceTree = "<absolute>";
-	};
-	F0BEAC7715F1426100E76782 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 00BAE6590E7ED9C10018A608 /* RoyalSocietyApp.cpp */;
-		name = "RoyalSocietyApp.cpp: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 451;
-		vrLoc = 0;
-	};
-	F0F198C515F2DF7200A084DC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 00BAE6590E7ED9C10018A608 /* RoyalSocietyApp.cpp */;
-		name = "RoyalSocietyApp.cpp: 57";
-		rLen = 0;
-		rLoc = 1207;
-		rType = 0;
-		vrLen = 1169;
-		vrLoc = 512;
 	};
 }
