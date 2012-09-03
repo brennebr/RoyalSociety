@@ -21,15 +21,21 @@ using namespace ci;
 using namespace ci::app;
 using namespace std;
 
-Diamond::Diamond(){
+Diamond::Diamond(int depth, Vec2f position, float radius){
 	//This is a circular list, so a list of length 1 has
 	// next and prev pointing to itself
 	next_ = prev_ = this;
 	children_ = NULL;
 	
-	position_ = Vec2f(0.0f,0.0f);
-	radius_ = 0.0f;
+	position_ = position_;
+	radius_ = radius;
 	velocity_ = randVec2f();
+	
+	if(depth > 0){
+		addRandomChild(depth-1);
+		addRandomChild(depth-1);
+		addRandomChild(depth-1);
+	}
 }
 
 void insertAfter(Diamond* new_item, Diamond* insert_here){
@@ -46,7 +52,10 @@ bool Diamond::isInside(float x, float y){
 }
 
 void Diamond::update(Vec2f parent_position, float parent_r){
-	
+	position_ = position_ + velocity_;
+	//TODO Add a bounds check here, so stuff doesn't drift away
+	velocity_ = 0.95*velocity_ +0.05*randVec2f();
+	velocity_.safeNormalize();
 	
 	Diamond* cur = children_;
 	if(cur != NULL){
@@ -57,11 +66,8 @@ void Diamond::update(Vec2f parent_position, float parent_r){
 	}
 }
 
-void Diamond::addRandomChild(){
-	Diamond* new_item = new Diamond();
-	new_item->radius_ = 0.45*radius_;
-	//TODO change center
-	new_item->position_ = position_;
+void Diamond::addRandomChild(int depth){
+	Diamond* new_item = new Diamond(depth,position_,0.45*radius_);
 	
 	if(children_ != NULL){
 		insertAfter(new_item, children_);

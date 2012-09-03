@@ -14,7 +14,7 @@
 
 class Diamond{
 public:
-	Diamond();
+	Diamond(int depth, ci::Vec2f position, float radius);
 	
 	//Pointers to my siblings
 	Diamond* next_;
@@ -33,7 +33,7 @@ public:
 	void draw(ci::Vec2i mouse_pos);
 	void update(ci::Vec2f parent_position, float parent_r);
 	
-	void addRandomChild();
+	void addRandomChild(int depth);
 };
 
 void insertAfter(Diamond* new_item, Diamond* insert_here);
