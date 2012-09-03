@@ -31,7 +31,9 @@ public:
 	//Return true of the (x,y) provided is inside the diamond
 	bool isInside(float x, float y);
 	void draw(ci::Vec2i mouse_pos);
-	void update();
+	void update(float parent_x, float parent_y, float parent_r);
+	
+	void addRandomChild();
 };
 
 void insertAfter(Diamond* new_item, Diamond* insert_here);

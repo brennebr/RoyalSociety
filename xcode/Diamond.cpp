@@ -42,13 +42,27 @@ bool Diamond::isInside(float x, float y){
 			trans.y >= y_-radius_ && trans.y <= y_+radius_);
 }
 
-void Diamond::update(){
+void Diamond::update(float parent_x, float parent_y, float parent_r){
 	Diamond* cur = children_;
 	if(cur != NULL){
 		do {
-			cur->update();
+			cur->update(x_,y_,radius_);
 			cur = cur->next_;
 		} while (cur->next_ != children_);
+	}
+}
+
+void Diamond::addRandomChild(){
+	Diamond* new_item = new Diamond();
+	new_item->radius_ = 0.45*radius_;
+	//TODO change center
+	new_item->x_ = x_;
+	new_item->y_ = y_;
+	
+	if(children_ != NULL){
+		insertAfter(new_item, children_);
+	} else {
+		children_ = new_item;
 	}
 }
 
@@ -56,16 +70,17 @@ void Diamond::draw(Vec2i mp){
 	//First, draw myself
 	
 	bool is_inside = isInside(mp.x, mp.y);
+
 	if(is_inside){
-		gl::color(Color8u(0,255,0));
+		gl::color(Color8u(255,92,92));
 	} else {
 		gl::color(Color8u(255,0,0));
 	}
 	gl::drawSolidRect(Rectf(x_-radius_,y_-radius_,x_+radius_,y_+radius_));
 	gl::color(Color8u(255,255,0));
-	gl::drawSolidRect(Rectf(x_-0.9*radius_,y_-0.9*radius_,x_+0.9*radius_,y_+0.9*radius_));
+	gl::drawSolidRect(Rectf(x_-0.95*radius_,y_-0.95*radius_,x_+0.95*radius_,y_+0.95*radius_));
 	gl::color(Color8u(255,0,0));
-	gl::drawSolidRect(Rectf(x_-0.8*radius_,y_-0.8*radius_,x_+0.8*radius_,y_+0.8*radius_));
+	gl::drawSolidRect(Rectf(x_-0.9*radius_,y_-0.9*radius_,x_+0.9*radius_,y_+0.9*radius_));
 	
 	//Next, draw my children
 	Diamond* cur = children_;
