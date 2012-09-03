@@ -41,6 +41,10 @@ void RoyalSocietyApp::setup()
 	diamond_list_->y_	= trans.y;	
 	diamond_list_->radius_	= kAppHeight/2.0f;
 	frame_number_ = 0;
+	
+	diamond_list_->addRandomChild();
+	diamond_list_->addRandomChild();
+	diamond_list_->addRandomChild();
 }
 
 void RoyalSocietyApp::mouseDown( MouseEvent event )
